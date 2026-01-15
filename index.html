@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cosmos Data Consulting</title>
+  <meta name="description" content="Data analytics and predictive modeling for supply & demand planning and operational optimization." />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#121826; --text:#e8eef7; --muted:#a9b4c2;
+      --line:rgba(255,255,255,.08); --accent:#7c5cff; --accent2:#ff7aa2;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      background:radial-gradient(900px 500px at 10% 10%, rgba(124,92,255,.25), transparent 60%),
+                 radial-gradient(900px 500px at 90% 20%, rgba(255,122,162,.18), transparent 60%),
+                 var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px 20px 70px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+    .brand{font-weight:700;letter-spacing:.2px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--line);
+      border-radius:999px;background:rgba(255,255,255,.03);text-decoration:none}
+    .pill strong{color:var(--text)}
+    .hero{padding:56px 0 26px}
+    .tag{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);
+      background:rgba(255,255,255,.03);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:13px}
+    h1{font-size:44px;line-height:1.08;margin:16px 0 12px;letter-spacing:-.6px}
+    .sub{color:var(--muted);font-size:18px;max-width:720px;line-height:1.6}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);
+      text-decoration:none}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;color:#0b0f14;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:26px}
+    .card{grid-column:span 4;background:rgba(255,255,255,.03);border:1px solid var(--line);
+      border-radius:18px;padding:18px 18px 16px}
+    .card h3{margin:0 0 8px;font-size:16px}
+    .card p{margin:0;color:var(--muted);line-height:1.55}
+    .section{margin-top:34px;padding-top:26px;border-top:1px solid var(--line)}
+    .section h2{margin:0 0 10px;font-size:22px;letter-spacing:-.2px}
+    .two{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .box{grid-column:span 6;background:rgba(255,255,255,.03);border:1px solid var(--line);
+      border-radius:18px;padding:18px}
+    ul{margin:10px 0 0;padding-left:18px;color:var(--muted);line-height:1.65}
+    .steps{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:10px}
+    .step{grid-column:span 3;background:rgba(255,255,255,.03);border:1px solid var(--line);
+      border-radius:18px;padding:16px}
+    .k{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;
+      background:rgba(124,92,255,.25);border:1px solid rgba(124,92,255,.35);font-weight:700}
+    .footer{margin-top:42px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    @media (max-width:900px){
+      h1{font-size:36px}
+      .card{grid-column:span 12}
+      .box{grid-column:span 12}
+      .step{grid-column:span 12}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">Cosmos Data Consulting</div>
+      <a class="pill" href="#contact"><strong>Contact</strong> →</a>
+    </div>
+
+    <div class="hero">
+      <div class="tag">Predictive Analytics • Supply & Demand Planning • Data Science</div>
+      <h1>Data-driven forecasting and planning for smarter operations.</h1>
+      <p class="sub">
+        We build predictive models and analytics workflows that help organizations improve demand forecasting,
+        capacity planning, and operational decision-making—fast, practical, and measurable.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="#services">View services</a>
+      </div>
+
+      <div id="services" class="grid">
+        <div class="card">
+          <h3>Forecasting Models</h3>
+          <p>Demand forecasting, seasonality, promotions, and scenario analysis with clear evaluation.</p>
+        </div>
+        <div class="card">
+          <h3>Planning Analytics</h3>
+          <p>Inventory/capacity planning insights and KPI metrics aligned with business constraints.</p>
+        </div>
+        <div class="card">
+          <h3>Automation & Pipelines</h3>
+          <p>Reliable Python/SQL pipelines and reporting automation for repeatable decision support.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>What you can expect</h2>
+      <div class="two">
+        <div class="box">
+          <strong>Clear deliverables</strong>
+          <ul>
+            <li>Forecast model + evaluation report (MAPE/MAE, backtesting)</li>
+            <li>Planning dashboard or metrics export (optional)</li>
+            <li>Reproducible pipeline + documentation</li>
+          </ul>
+        </div>
+        <div class="box">
+          <strong>Practical collaboration</strong>
+          <ul>
+            <li>Start with a baseline fast, then iterate</li>
+            <li>Transparent assumptions and constraints</li>
+            <li>Handoff that your team can maintain</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>How we work</h2>
+      <div class="steps">
+        <div class="step"><div class="k">1</div><h3>Discovery</h3><p class="sub">Goals, data availability, constraints, success metrics.</p></div>
+        <div class="step"><div class="k">2</div><h3>Prototype</h3><p class="sub">Baseline model + quick wins to validate direction.</p></div>
+        <div class="step"><div class="k">3</div><h3>Iterate</h3><p class="sub">Feature refinement, model tuning, and robustness checks.</p></div>
+        <div class="step"><div class="k">4</div><h3>Deliver</h3><p class="sub">Report, code/pipeline, and optional dashboard handoff.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>About</h2>
+      <div class="box">
+        <p class="sub" style="margin:0">
+          Cosmos Data Consulting is a small, focused practice delivering analytics and predictive modeling
+          for operations planning. We combine statistical modeling and machine learning with pragmatic
+          implementation in Python and SQL.
+        </p>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="box">
+        <p class="sub" style="margin:0 0 10px">
+          Email us with a brief description of your data and planning goal. We typically respond within 1–2 business days.
+        </p>
+        <p class="sub" style="margin:0">
+          <strong>Email:</strong> <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a><br/>
+          <span style="color:var(--muted)">Replace with your real email or use a contact form if you prefer.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Cosmos Data Consulting</div>
+      <div>Data Analytics • Predictive Modeling • Operations Planning</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
